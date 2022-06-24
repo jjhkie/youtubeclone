@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:youtubeclone/binding/init_binding.dart';
 import 'package:youtubeclone/src/app.dart';
+import 'package:youtubeclone/util/swatch_material_color.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: "App",
       theme: ThemeData(
         //primaryColor: Colors.white,
-        primarySwatch: Colors.blue,
+        primarySwatch: createMaterialColor(Color(0xFFFFFFFF)),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       initialBinding: InitBinding(),
@@ -27,4 +28,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 
