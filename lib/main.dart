@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:youtubeclone/binding/init_binding.dart';
+import 'package:youtubeclone/components/yotube_detail.dart';
 import 'package:youtubeclone/src/app.dart';
 import 'package:youtubeclone/util/swatch_material_color.dart';
 
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
       initialBinding: InitBinding(),
       initialRoute: "/",
       getPages: [
-        GetPage(name:"/",page: () =>const App())
+        GetPage(name:"/",page: () =>const App()),
+        GetPage(name:"/detail/:videoId",page: () => YoutubeDetail()),
       ],
     );
   }

@@ -17,7 +17,13 @@ class AppController extends GetxService {
       currentIndex(index);
     }
   }
+
   void _showBottomSheet(){
     Get.bottomSheet(YoutubeBottomSheet());
   }
+
+
+
+
+
 }
